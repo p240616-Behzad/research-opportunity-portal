@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research Opportunity Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎓 University Research Opportunity Portal</h1>
+    </header>
+
+    <main>
+        <div id="alert" class="alert hidden"></div>
+
+        <!-- Form Section -->
+        <section class="card">
+            <h2 id="form-title">➕ Create New Opportunity</h2>
+            <form id="opportunity-form">
+                <input type="hidden" id="opportunity-id">
+
+                <label>Title *</label>
+                <input type="text" id="title" required>
+
+                <label>Description *</label>
+                <textarea id="description" rows="3" required></textarea>
+
+                <label>Research Area *</label>
+                <input type="text" id="research_area" required>
+
+                <label>Required Skills</label>
+                <input type="text" id="required_skills" placeholder="e.g., Python, ML">
+
+                <label>Available Positions</label>
+                <input type="number" id="available_positions" min="1" value="1">
+
+                <label>Application Deadline</label>
+                <input type="date" id="application_deadline">
+
+                <label>Status</label>
+                <select id="status">
+                    <option value="Open">Open</option>
+                    <option value="Closed">Closed</option>
+                </select>
+
+                <div class="btn-group">
+                    <button type="submit" class="btn primary">Save</button>
+                    <button type="button" class="btn secondary" onclick="resetForm()">Cancel</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- List Section -->
+        <section class="card">
+            <h2>📋 All Opportunities</h2>
+            <div id="opportunities-list">Loading...</div>
+        </section>
+
+        <!-- Details Section -->
+        <section class="card hidden" id="details-section">
+            <h2>🔍 Opportunity Details</h2>
+            <div id="details-content"></div>
+            <button class="btn secondary" onclick="hideDetails()">Close Details</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
