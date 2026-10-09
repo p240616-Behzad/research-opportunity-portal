@@ -2,7 +2,7 @@
 
 A full-stack web application where faculty members can post, view, update, and manage research opportunities in one place.
 
-**GitHub Repository:** https://github.com/YOUR_USERNAME/research-opportunity-portal
+**GitHub Repository:** https://github.com/p240616-Behzad/research-opportunity-portal
 
 ---
 
@@ -30,7 +30,7 @@ Install these before setup:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/research-opportunity-portal.git
+git clone https://github.com/p240616-Behzad/research-opportunity-portal.git
 cd research-opportunity-portal
 ```
 
